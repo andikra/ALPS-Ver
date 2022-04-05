@@ -25,7 +25,7 @@ public class OtherClass
 }
 public class OriginalClass
 {
-     
+
 
 
     public static void Main(string[] args)
