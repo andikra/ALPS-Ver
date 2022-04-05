@@ -1,3 +1,8 @@
+# ALPS Verification
+This console application is part of my master thesis at the Karlsruher Institute of Technology (KIT) and uses the apls.net.api to verify ALPS Models. To use this application, you need an abstract model (Specification) and an implementing model (Implementation). The program then checks based on the alps.net.api, if the implementation adheres to the restrictions and rules implied by the specification. 
+
+
+
 # alps.net.api
 
 This C# library provides the functionality to create and modify in-memory PASS process models.
