@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29613.14
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "alps.net.api", "alps.net.api.csproj", "{2DC3BAFB-8D90-4582-A07A-CD962F3FC4E0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestProject", "..\UnitTestProject\UnitTestProject.csproj", "{0CF5AD1C-7C71-40C7-B857-53F25C3A101B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ALPS Verification", "..\ALPS Verification\ALPS Verification.csproj", "{AE1A43BA-9A53-4A3C-8694-36E03BA5E393}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{0CF5AD1C-7C71-40C7-B857-53F25C3A101B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CF5AD1C-7C71-40C7-B857-53F25C3A101B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CF5AD1C-7C71-40C7-B857-53F25C3A101B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE1A43BA-9A53-4A3C-8694-36E03BA5E393}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE1A43BA-9A53-4A3C-8694-36E03BA5E393}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE1A43BA-9A53-4A3C-8694-36E03BA5E393}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE1A43BA-9A53-4A3C-8694-36E03BA5E393}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
