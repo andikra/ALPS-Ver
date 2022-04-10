@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\alps.net.api\alps.net.api.csproj" />
+    <PackageReference Include="alps.net.api" Version="0.8.1.2" />
   </ItemGroup>
 
 </Project>

@@ -39,8 +39,8 @@ public class OriginalClass
 
         IList<ISubject> Subjects1 = models[1].getAllElements().Values.OfType<ISubject>().ToList();
         IList<ISubject> Subjects0 = models[0].getAllElements().Values.OfType<ISubject>().ToList();
-        // IMessageSpecification Spec0 = models[0].getAllElements().Values.OfType<IMessageSpecification>();
 
+        ISet<IImplementingElement<ISubject>> implementingElementsSet = new HashSet<IImplementingElement<ISubject>>(models[1].getAllElements().Values.OfType<IImplementingElement<ISubject>>().ToList());
 
 
         IList<IMessageExchange> Message0 = models[0].getAllElements().Values.OfType<IMessageExchange>().ToList();
@@ -108,8 +108,15 @@ public class OriginalClass
         }
 
 
+        Console.WriteLine("Implementations for SID Elements");
 
-
+        foreach (IImplementingElement<ISubject> i in implementingElementsSet)
+        {
+            foreach (string referencemodelID in i.getImplementedInterfacesIDReferences() )
+            {
+                Console.WriteLine(referencemodelID);
+            }
+        }
 
     }
 
