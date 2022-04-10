@@ -109,17 +109,46 @@ public class OriginalClass
 
 
         Console.WriteLine("Implementations for SID Elements");
-
+        int x = 0;
         foreach (IImplementingElement<ISubject> i in implementingElementsSet)
         {
             foreach (string referencemodelID in i.getImplementedInterfacesIDReferences() )
             {
+                
                 Console.WriteLine(referencemodelID);
+                foreach (ISubject BaseSubjectID in Subjects0)
+                {
+                    if (referencemodelID==BaseSubjectID.ToString())
+                    {
+                         x = x + 1;
+                    }
+
+                }
+                if (x==1)
+                {
+                    Console.WriteLine("Element impemented!");
+
+                }
+                else if (x<1)
+                {
+                    Console.WriteLine("Element not implemented!");
+
+                }
+                else
+                {
+                    Console.WriteLine("Element implemented multiple times!");
+
+                }
+
+            }
+
             }
         }
 
+
     }
 
-}
+
+
 
 
