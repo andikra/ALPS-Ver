@@ -41,6 +41,7 @@ public class OriginalClass
         IList<ISubject> Subjects0 = models[0].getAllElements().Values.OfType<ISubject>().ToList();
 
         ISet<IImplementingElement<ISubject>> implementingElementsSet = new HashSet<IImplementingElement<ISubject>>(models[1].getAllElements().Values.OfType<IImplementingElement<ISubject>>().ToList());
+        ISet<IImplementingElement<IMessageExchange>> implementingMessagesSet = new HashSet<IImplementingElement<IMessageExchange>>(models[1].getAllElements().Values.OfType<IImplementingElement<IMessageExchange>>().ToList());
 
 
         IList<IMessageExchange> Message0 = models[0].getAllElements().Values.OfType<IMessageExchange>().ToList();
@@ -107,8 +108,41 @@ public class OriginalClass
 
         }
 
+        Console.WriteLine("Implementations for SID Messages");
+        int y = 0;
+        foreach (IImplementingElement<IMessageExchange> i in implementingMessagesSet)
+        {
+            foreach (string referencemodelID in i.getImplementedInterfacesIDReferences())
+            {
+                Console.WriteLine(referencemodelID);
+                foreach (IMessageExchange BaseMessageID in Message0)
+                {
+                    if (referencemodelID == BaseMessageID.ToString())
+                    {
+                        y = y + 1;
+                    }
 
-        Console.WriteLine("Implementations for SID Elements");
+                }
+                if (y == 1)
+                {
+                    Console.WriteLine("Element impemented!");
+
+                }
+                else if (y < 1)
+                {
+                    Console.WriteLine("Element not implemented!");
+
+                }
+                else
+                {
+                    Console.WriteLine("Element implemented " + y + " times!");
+
+                }
+            }
+        }
+
+
+        Console.WriteLine("Implementations for SID Subjects");
         int x = 0;
         foreach (IImplementingElement<ISubject> i in implementingElementsSet)
         {
@@ -136,7 +170,7 @@ public class OriginalClass
                 }
                 else
                 {
-                    Console.WriteLine("Element implemented multiple times!");
+                    Console.WriteLine("Element implemented " + x + " times!");
 
                 }
 
@@ -144,7 +178,6 @@ public class OriginalClass
 
             }
         }
-
 
     }
 
