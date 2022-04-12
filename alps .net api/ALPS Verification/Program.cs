@@ -37,12 +37,20 @@ public class OriginalClass
 
         // Check if all Subjects of model 0 are implemented in model 1
         IList<IImplementingElement<ISubject>> implementingElementsSet = models[1].getAllElements().Values.OfType<IImplementingElement<ISubject>>().ToList();
-        IList<ISubject> specifyingElements = models[0].getAllElements().Values.OfType<ISubject>().ToList();
+        IList<IImplementingElement<IMessageExchange>> implementingElementsMessage = models[1].getAllElements().Values.OfType<IImplementingElement<IMessageExchange>>().ToList();
+
+        IList<ISubject> specifyingElementsSubject = models[0].getAllElements().Values.OfType<ISubject>().ToList();
+        IList<IMessageExchange> specifyingElementsMessages = models[0].getAllElements().Values.OfType<IMessageExchange>().ToList();
+
 
 
 
         CheckSubjectExistence checkSubject = new CheckSubjectExistence();
-        checkSubject.CheckExistence(implementingElementsSet, specifyingElements);
+        checkSubject.CheckExistence(implementingElementsSet, specifyingElementsSubject);
+        checkSubject.CheckExistenceMessage(implementingElementsMessage, specifyingElementsMessages);
+
+
+
 
 
         ISet<IImplementingElement<IMessageExchange>> implementingMessagesSet = new HashSet<IImplementingElement<IMessageExchange>>(models[1].getAllElements().Values.OfType<IImplementingElement<IMessageExchange>>().ToList());
