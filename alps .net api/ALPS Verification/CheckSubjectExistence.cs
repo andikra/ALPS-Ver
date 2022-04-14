@@ -69,7 +69,45 @@ using System.Collections.Generic;
                     if (i.getUriModelComponentID() == ID)
                     {
                         z++;
-                        Console.WriteLine(ID);
+                        //Console.WriteLine(ID);
+
+                    }
+
+                }
+
+            }
+            switch (z)
+            {
+                case 1:
+                    Console.WriteLine("Element implemented!");
+                    break;
+                case > 1:
+                    Console.WriteLine("Element implemented " + z + " times!");
+                    break;
+                case < 1:
+                    Console.WriteLine("Element not implemented!");
+                    break;
+            }
+        }
+
+    }
+    public void CheckExistenceMessageSpecs(IList<IImplementingElement<IMessageSpecification>> implementing_message, IList<IMessageSpecification> specifying_message)
+    {
+        Console.WriteLine("\nSpecified MessageSpecs:");
+
+        foreach (IMessageSpecification i in specifying_message)
+        {
+            int z = 0;
+            Console.WriteLine(i.getUriModelComponentID());
+
+            foreach (var j in implementing_message)
+            {
+                foreach (string ID in j.getImplementedInterfacesIDReferences())
+                {
+                    if (i.getUriModelComponentID() == ID)
+                    {
+                        z++;
+                        //Console.WriteLine(ID);
 
                     }
 
