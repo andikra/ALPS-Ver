@@ -22,16 +22,16 @@ using System.Collections.Generic;
         foreach (ISubject i in specifying)
         {
             int z = 0;
-            Console.WriteLine(i.getModelComponentID()) ;
+            Console.WriteLine(i.getUriModelComponentID()) ;
 
             foreach (var j in implementing)
             {
                 foreach (string ID in j.getImplementedInterfacesIDReferences())
                 {
-                    if (i.getModelComponentID() == ID)
+                    if (i.getUriModelComponentID() == ID)
                     {
                        z++;
-                        Console.WriteLine(ID);
+                      //  Console.WriteLine(ID);
 
                     }
 
@@ -60,13 +60,13 @@ using System.Collections.Generic;
         foreach (IMessageExchange i in specifying_message)
         {
             int z = 0;
-            Console.WriteLine(i.getModelComponentID());
+            Console.WriteLine(i.getUriModelComponentID());
 
             foreach (var j in implementing_message)
             {
                 foreach (string ID in j.getImplementedInterfacesIDReferences())
                 {
-                    if (i.getModelComponentID() == ID)
+                    if (i.getUriModelComponentID() == ID)
                     {
                         z++;
                         Console.WriteLine(ID);

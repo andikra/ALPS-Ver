@@ -53,7 +53,8 @@ public class OriginalClass
 
 
 
-        ISet<IImplementingElement<IMessageExchange>> implementingMessagesSet = new HashSet<IImplementingElement<IMessageExchange>>(models[1].getAllElements().Values.OfType<IImplementingElement<IMessageExchange>>().ToList());
+
+                ISet<IImplementingElement<IMessageExchange>> implementingMessagesSet = new HashSet<IImplementingElement<IMessageExchange>>(models[1].getAllElements().Values.OfType<IImplementingElement<IMessageExchange>>().ToList());
 
         IList<ISubject> Subjects1 = models[1].getAllElements().Values.OfType<ISubject>().ToList();
         IList<ISubject> Subjects0 = models[0].getAllElements().Values.OfType<ISubject>().ToList();

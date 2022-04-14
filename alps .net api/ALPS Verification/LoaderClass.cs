@@ -21,7 +21,7 @@ using System.Collections.Generic;
         {
             PASSReaderWriter graph = PASSReaderWriter.getInstance();
             graph.loadOWLParsingStructure(new List<string> { "../../../Ont/standard_PASS_ont_v_1.1.0.owl", "../../../Ont/abstract-layered-pass-ont.owl" });
-            IList<IPASSProcessModel> models = graph.loadModels(new List<string> { "../../../Ont/Customer_is_king.owl", "../../../Ont/Precendence.owl" });
+            IList<IPASSProcessModel> models = graph.loadModels(new List<string> { "../../../Ont/AbstractModel.owl", "../../../Ont/ImplementingModel.owl" });
             Console.WriteLine("Test");
 
 
