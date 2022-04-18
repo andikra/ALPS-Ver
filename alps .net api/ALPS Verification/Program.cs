@@ -8,6 +8,7 @@ using alps.net.api.StandardPASS.SubjectBehaviors;
 using alps.net.api.parsing;
 using VDS.RDF;
 using System.Collections.Generic;
+using alps.net.api.ALPS.ALPSModelElements.ALPSSIDComponents;
 
 // See https://aka.ms/new-console-template for more information
 
@@ -25,14 +26,15 @@ public class OtherClass
 }
 public class OriginalClass
 {
-
-
+    
+    
 
     public static void Main(string[] args)
     {
         //Load models and ontologies
         LoaderClass load = new LoaderClass();
         IList<IPASSProcessModel> models = load.importModels();
+        
 
 
         // Check if all Subjects of model 0 are implemented in model 1
@@ -42,7 +44,9 @@ public class OriginalClass
 
         IList<ISubject> specifyingElementsSubject = models[0].getAllElements().Values.OfType<ISubject>().ToList();
         IList<IMessageExchange> specifyingElementsMessages = models[0].getAllElements().Values.OfType<IMessageExchange>().ToList();
-        IList<IMessageSpecification> specifyingElementsMessagesSpecs = models[0].getAllElements().Values.OfType<IMessageSpecification>().ToList();
+        IList<IMessageExchange> impElementsMessages = models[1].getAllElements().Values.OfType<IMessageExchange>().ToList();
+
+        IList<ICommunicationRestriction> specifyingElementsRestrictions = models[0].getAllElements().Values.OfType<ICommunicationRestriction>().ToList();
 
 
 
@@ -51,7 +55,7 @@ public class OriginalClass
         CheckSubjectExistence checkSubject = new CheckSubjectExistence();
         checkSubject.CheckExistence(implementingElementsSet, specifyingElementsSubject);
         checkSubject.CheckExistenceMessage(implementingElementsMessage, specifyingElementsMessages);
-        checkSubject.CheckExistenceMessageSpecs(implementingElementsMessageSpecs, specifyingElementsMessagesSpecs);
+        checkSubject.CheckRestrictions(impElementsMessages, specifyingElementsRestrictions);
 
 
 

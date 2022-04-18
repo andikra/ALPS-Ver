@@ -11,13 +11,41 @@ using alps.net.api.StandardPASS.SubjectBehaviors;
 using alps.net.api.parsing;
 using VDS.RDF;
 using System.Collections.Generic;
+using alps.net.api.ALPS.ALPSModelElements.ALPSSIDComponents;
 
-
-    public class CheckSubjectExistence
+public class CheckSubjectExistence
     {
+    public void CheckRestrictions(IList<IMessageExchange> implementing, IList<ICommunicationRestriction> specifying)
+    {
+        Console.WriteLine("\nSpecified Restrictions:");
+
+        foreach (ICommunicationRestriction i in specifying)
+        {
+            Console.WriteLine(i.getModelComponentLabelsAsStrings()[0]);
+
+           // Console.WriteLine("Between " + i.getSender() + " and " + i.getReceiver());
+
+
+
+            foreach (var j in implementing)
+            {
+                if (j.getSender()==i.getSender())
+                {
+                    if (j.getReceiver()==i.getReceiver())
+                    {
+                        Console.WriteLine("Restriction violated!");
+
+                    }
+                }
+
+            }
+            
+        }
+
+    }
     public void CheckExistence(IList<IImplementingElement<ISubject>> implementing, IList<ISubject> specifying)
     {
-        Console.WriteLine("Specified Subjects:");
+        Console.WriteLine("\nSpecified Subjects:");
 
         foreach (ISubject i in specifying)
         {
