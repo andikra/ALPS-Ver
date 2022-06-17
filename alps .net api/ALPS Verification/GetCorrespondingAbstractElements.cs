@@ -10,31 +10,30 @@ using VDS.RDF;
 using System.Collections.Generic;
 using alps.net.api.ALPS;
 
-public class GetCorrespondingElements
+public class GetCorrespondingAbstractElements
 {
 
-    public List<Tuple<ISubject, ISubject>> GetCorrElements(IList<IImplementingElement<ISubject>> implementing, IList<ISubject> specifying)
+    public List<Tuple<IALPSSIDComponent, IImplementingElement>> GetCorrAbstract(IList<IImplementingElement> implementing, IList<IALPSSIDComponent> specifying)
     {
-        Console.WriteLine("\nCorresponding Subjects:");
-        var Elements = new List<Tuple<ISubject, ISubject>>();
-        {
-        };
-        foreach (ISubject i in specifying)
+        Console.WriteLine("\nCorresponding Abstract Elements:");
+        var Elements = new List<Tuple<IALPSSIDComponent, IImplementingElement>>();
+        
+        foreach (IALPSSIDComponent i in specifying)
         {
             int z = 0;
             Console.WriteLine(i.getUriModelComponentID());
             LogWriter log = new LogWriter(i.getUriModelComponentID());
 
-            foreach (ISubject j in implementing)
+            foreach (IImplementingElement j in implementing)
             {
                 foreach (string ID in j.getImplementedInterfacesIDReferences())
                 {
                     if (i.getUriModelComponentID() == ID)
                     {
                         z++;
-                        Elements.Add(new Tuple<ISubject, ISubject>(i, j));
+                        Elements.Add(new Tuple<IALPSSIDComponent, IImplementingElement>(i, j));
                         //  Console.WriteLine(ID);
-
+                       
                     }
 
                 }
@@ -61,6 +60,4 @@ public class GetCorrespondingElements
         return Elements;
        
     }
-
-
 }

@@ -28,52 +28,54 @@ public class OriginalClass
 
     public static void Main(string[] args)
     {
-        //Load models and ontologies
-       // LoaderClass load = new LoaderClass();
-       //IList<IPASSProcessModel> models = load.importModels();
+ //Load models and ontologies
 
         HelperClass helper = new HelperClass();
         IList<IPASSProcessModel> models = helper.importModels();
+        LogWriter log = new LogWriter("Kra");
+        
 
 
 
 
-
-        // Check if all Subjects of model 0 are implemented in model 1
+ // Used SID Values from the implementing model:
         IList<IImplementingElement<ISubject>> implementingElementsSet = models[1].getAllElements().Values.OfType<IImplementingElement<ISubject>>().ToList();
         IList<IImplementingElement<IMessageSpecification>> implementingElementsMessage = models[1].getAllElements().Values.OfType<IImplementingElement<IMessageSpecification>>().ToList();
         IList<IImplementingElement<IMessageSpecification>> implementingElementsMessageSpecs = models[1].getAllElements().Values.OfType<IImplementingElement<IMessageSpecification>>().ToList();
+        IList<IImplementingElement> implementingElements = models[1].getAllElements().Values.OfType<IImplementingElement>().ToList();
+        IList<IMessageExchange> impElementsMessages = models[1].getAllElements().Values.OfType<IMessageExchange>().ToList();
+        IList<IPASSProcessModelElement> implementingElementsStandard = models[1].getAllElements().Values.OfType<IPASSProcessModelElement>().ToList();
 
+ // Used SID Values from the specifying model:
+        IList<IALPSSIDComponent> specElements = models[0].getAllElements().Values.OfType<IALPSSIDComponent>().ToList();
         IList<ISubject> specifyingElementsSubject = models[0].getAllElements().Values.OfType<ISubject>().ToList();
         IList<IMessageSpecification> specifyingElementsMessages = models[0].getAllElements().Values.OfType<IMessageSpecification>().ToList();
-        IList<IMessageExchange> impElementsMessages = models[1].getAllElements().Values.OfType<IMessageExchange>().ToList();
-
         IList<ICommunicationRestriction> specifyingElementsRestrictions = models[0].getAllElements().Values.OfType<ICommunicationRestriction>().ToList();
+        IList<IPASSProcessModelElement> specifyingElementsStandard = models[0].getAllElements().Values.OfType<IPASSProcessModelElement>().ToList();
+
+
+
+
+//Methods for SID Implementation Existence checks:
+        GetCorrespondingElementsALL GetAll = new GetCorrespondingElementsALL();
+
+        List<Tuple<ISubject, ISubject>> Subjects = GetAll.GetSubjects(models);
+        List<Tuple<IMessageExchange, IImplementingElement<IMessageExchange>>> Messages = GetAll.GetMessages(models);
+        List<Tuple<ICommunicationAct, IImplementingElement<ICommunicationAct>>> Transitions = GetAll.GetMessageTransitions(models);
+        List<Tuple<ICommunicationRestriction, IImplementingElement<ICommunicationRestriction>>> restrictions = GetAll.GetMessageRestriction(models);
+
+//Methods for SID Validity checks: 
+        CheckSID CheckSID = new CheckSID();
+        int ResultCheckSIDRestrictions = CheckSID.CheckCommunicationRestrictions(specifyingElementsRestrictions, impElementsMessages);
+
+ 
 
 
 
 
 
-        CheckSubjectExistence checkSubject = new CheckSubjectExistence();
-        GetCorrespondingElements getelements = new GetCorrespondingElements();
-        getelements.GetCorrElements(implementingElementsSet, specifyingElementsSubject);
-        checkSubject.CheckExistence(implementingElementsSet, specifyingElementsSubject);
-        checkSubject.CheckExistenceMessage(implementingElementsMessage, specifyingElementsMessages);
-        checkSubject.CheckRestrictions(impElementsMessages, specifyingElementsRestrictions);
 
-        IList<ISubject> returnsubjects = checkSubject.CheckExistence(implementingElementsSet, specifyingElementsSubject);
-        Console.WriteLine(returnsubjects);
-
-        List<Tuple<ISubject, ISubject>> test = getelements.GetCorrElements(implementingElementsSet, specifyingElementsSubject);
-        Console.WriteLine(test[0].Item1.getUriModelComponentID());
-
-
-
-
-
-
-        ISet<IImplementingElement<IMessageExchange>> implementingMessagesSet = new HashSet<IImplementingElement<IMessageExchange>>(models[1].getAllElements().Values.OfType<IImplementingElement<IMessageExchange>>().ToList());
-
+//Testing Section
         IList<ISubject> Subjects1 = models[1].getAllElements().Values.OfType<ISubject>().ToList();
         IList<ISubject> Subjects0 = models[0].getAllElements().Values.OfType<ISubject>().ToList();
 
@@ -81,11 +83,10 @@ public class OriginalClass
         IList<IMessageExchange> Message1 = models[1].getAllElements().Values.OfType<IMessageExchange>().ToList();
         IDictionary<string, IMessageExchange> MessagesIncoming = new Dictionary<string, IMessageExchange>();
 
-        LogWriter log = new LogWriter("Kra");
        
 
 
-        Console.WriteLine("\nAbstract Model Subjects: ");
+        Console.WriteLine("\nSpecifying Model Subjects: ");
 
         for (int i = 0; i < Subjects0.Count; i++)
 
@@ -104,7 +105,7 @@ public class OriginalClass
 
         }
 
-        Console.WriteLine("\nAbstract Model Messages: ");
+        Console.WriteLine("\nSpecifying Model Messages: ");
 
         for (int i = 0; i < Message0.Count; i++)
         {
