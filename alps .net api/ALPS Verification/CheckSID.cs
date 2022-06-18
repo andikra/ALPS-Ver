@@ -52,10 +52,76 @@ using alps.net.api.ALPS;
                 return 0;
             }
         }
+    //This method checks whether the implementation references still fulfil the restrictions given by the specification 
+    //-- example: a fully specified subect must be implemented as a fully specified subject and cannot be an abstract subject
+    public bool CheckSubject(IList<Tuple<ISubject,ISubject>> Subjects)
+    {
+        Console.WriteLine("\nCheck SID Subject Implementation:");
+        int z = 0;
+        bool result = true;
+        int FullySpecified = 0;
 
+        foreach (Tuple<ISubject, ISubject> t in Subjects.Where((a =>a.Item1!=a.Item2)))
+        {
+            Console.WriteLine(t.Item1.GetType());
+            Console.WriteLine(t.Item2.GetType());
 
+            switch (t.Item1.GetType().ToString())
+            {
+                case "alps.net.api.StandardPASS.FullySpecifiedSubject":
+                    if (t.Item1.GetType()!=t.Item2.GetType())
+                    {
+                        Console.WriteLine("Implementation not correct!");
+                        FullySpecified++;
+                    }
+                    break;
 
+               //insert other subject forms here
+            }
+        
 
-
+        }
+        if (FullySpecified > 0)
+        {
+            result = false;
+        }
+        return result;
     }
+
+    public bool CheckMessageconnectors(IList<Tuple<ICommunicationAct, IImplementingElement<ICommunicationAct>>> MessageTransitions)
+    {
+        Console.WriteLine("\nCheck SID Transition Implementation:");
+        int z = 0;
+        bool result = true;
+        int FullySpecified = 0;
+
+        foreach (Tuple<ICommunicationAct, IImplementingElement<ICommunicationAct>> t in MessageTransitions.Where((a => a.Item1 != null)))
+        {
+            Console.WriteLine(t.Item1.GetType());
+            Console.WriteLine(t.Item2.GetType());
+
+            switch (t.Item1.GetType().ToString())
+            {
+                case "alps.net.api.StandardPASS.FullySpecifiedSubject":
+                    if (t.Item1.GetType() != t.Item2.GetType())
+                    {
+                        Console.WriteLine("Implementation not correct!");
+                        FullySpecified++;
+                    }
+                    break;
+
+                    //insert other subject forms here
+            }
+
+
+        }
+        if (FullySpecified > 0)
+        {
+            result = false;
+        }
+        return result;
+    }
+
+
+}
 

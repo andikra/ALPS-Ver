@@ -67,15 +67,17 @@ public class OriginalClass
 //Methods for SID Validity checks: 
         CheckSID CheckSID = new CheckSID();
         int ResultCheckSIDRestrictions = CheckSID.CheckCommunicationRestrictions(specifyingElementsRestrictions, impElementsMessages);
-
- 
-
-
+        CheckSID.CheckSubject(Subjects);
+        CheckSID.CheckMessageconnectors(Transitions);
 
 
 
 
-//Testing Section
+
+
+
+
+        //Testing Section
         IList<ISubject> Subjects1 = models[1].getAllElements().Values.OfType<ISubject>().ToList();
         IList<ISubject> Subjects0 = models[0].getAllElements().Values.OfType<ISubject>().ToList();
 

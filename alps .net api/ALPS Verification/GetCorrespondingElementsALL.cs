@@ -67,7 +67,7 @@ public class GetCorrespondingElementsALL
                 case < 1:
                     Console.WriteLine("Element not implemented!");
                     LogWriter logcor3 = new LogWriter(i+" Element not implemented!");
-                    Elements.Add(new Tuple<ISubject, ISubject>(i, null));
+                    Elements.Add(new Tuple<ISubject, ISubject>(i, i ));
 
                     break;
             }
