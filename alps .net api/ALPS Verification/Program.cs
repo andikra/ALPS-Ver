@@ -38,7 +38,8 @@ public class OriginalClass
 
 
 
- // Used SID Values from the implementing model:
+
+        // Used SID Values from the implementing model:
         IList<IImplementingElement<ISubject>> implementingElementsSet = models[1].getAllElements().Values.OfType<IImplementingElement<ISubject>>().ToList();
         IList<IImplementingElement<IMessageSpecification>> implementingElementsMessage = models[1].getAllElements().Values.OfType<IImplementingElement<IMessageSpecification>>().ToList();
         IList<IImplementingElement<IMessageSpecification>> implementingElementsMessageSpecs = models[1].getAllElements().Values.OfType<IImplementingElement<IMessageSpecification>>().ToList();
@@ -63,12 +64,22 @@ public class OriginalClass
         List<Tuple<IMessageExchange, IImplementingElement<IMessageExchange>>> Messages = GetAll.GetMessages(models);
         List<Tuple<ICommunicationAct, IImplementingElement<ICommunicationAct>>> Transitions = GetAll.GetMessageTransitions(models);
         List<Tuple<ICommunicationRestriction, IImplementingElement<ICommunicationRestriction>>> restrictions = GetAll.GetMessageRestriction(models);
+        List<Tuple<IState, IState>> States =GetAll.GetStates(models);
+        List<Tuple<ITransition, ITransition>> SBDTransitions = GetAll.GetTransitions(models);
 
-//Methods for SID Validity checks: 
+
+
+        //Methods for SID Validity checks: 
         CheckSID CheckSID = new CheckSID();
         int ResultCheckSIDRestrictions = CheckSID.CheckCommunicationRestrictions(specifyingElementsRestrictions, impElementsMessages);
         CheckSID.CheckSubject(Subjects);
         CheckSID.CheckMessageconnectors(Transitions);
+
+//Methods for SID Validity checks: 
+        CheckSBD CheckSBD = new CheckSBD();
+       
+
+
 
 
 
@@ -85,9 +96,17 @@ public class OriginalClass
         IList<IMessageExchange> Message1 = models[1].getAllElements().Values.OfType<IMessageExchange>().ToList();
         IDictionary<string, IMessageExchange> MessagesIncoming = new Dictionary<string, IMessageExchange>();
 
-       
 
 
+        Console.WriteLine("\nSpecifying Model Subject Types: ");
+
+        for (int i = 0; i < Subjects0.Count; i++)
+
+        {
+            
+            Console.WriteLine(Subjects0[i].GetType());
+
+        }
         Console.WriteLine("\nSpecifying Model Subjects: ");
 
         for (int i = 0; i < Subjects0.Count; i++)

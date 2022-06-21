@@ -16,7 +16,8 @@ using System.Reflection;
         }
         public void LogWrite(string logMessage)
         {
-            m_exePath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+        //m_exePath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+         m_exePath = "../../../Ont";
             try
             {
                 using (StreamWriter w = File.AppendText(m_exePath + "\\" + "log.txt"))
