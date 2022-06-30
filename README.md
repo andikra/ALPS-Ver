@@ -61,4 +61,4 @@ SBD:
 
 
 # Planned Structure: 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/andikra/ALPS-Verification-Thesis/blob/main/UML_Verification.JPG)
