@@ -39,12 +39,6 @@ SID Verification:
 - SID Message Implementation Check
 - SID Message Restriction Check
 
-SBD Verification: 
-
-
-
-
-
 
 
 # To Dos:
@@ -52,7 +46,8 @@ SBD Verification:
 General: 
 - Idea: User Interface for easier usage
 - Idea: Suggestion System that tries to solve occuring errors
-- Verification result must be gathered from the individual check return values. Right now it still requires a person to derive the result from the outputs. 
+- Verification result must be gathered from the individual check return values. Right now it still requires a person to derive the result from the outputs.
+- Node System from a different library is included, but the interface is still not functional
 
 SID: 
 - Abstract Communication Channels Check
@@ -61,4 +56,6 @@ SID:
 
 
 SBD: 
+- General Checks on singular elements
+- checks via node system for precedence/trigger transitions
 
