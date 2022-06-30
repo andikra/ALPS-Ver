@@ -1,6 +1,8 @@
 # ALPS Verification
 This console application is part of my master thesis at the Karlsruher Institute of Technology (KIT) and uses the apls.net.api to verify ALPS Models. To use this application, you need an abstract model (Specification) and an implementing model (Implementation). The program then checks based on the alps.net.api, if the implementation adheres to the restrictions and rules implied by the specification. 
 
+#Attention! This project is still a prototype and missing a lot of functions! It may be that parts of your model will not be verified correctly!
+For further development, feel free to use the OWLs provided in this folder. These contain exemplary test cases. 
 
 # How to use:
 
@@ -15,7 +17,11 @@ This console application is part of my master thesis at the Karlsruher Institute
 - Run the console application. The results for the verification will be displayed in the console. 
 
 
+#Working until now (Update 30.06.2022):
 
+- SID Subject Implementation Check
+- SID Message Implementation Check
+- SID Message Restriction Check
 
 
 # alps.net.api
@@ -34,5 +40,4 @@ Currently the library is targeting .NET Core 3.1 (netcoreapp3.1) as well as .NET
 
 #To Dos:
 
-Markup: *1
-        *2
+- 
