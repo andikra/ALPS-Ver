@@ -1,8 +1,20 @@
 # ALPS Verification
-This console application is part of my master thesis at the Karlsruher Institute of Technology (KIT) and uses the apls.net.api to verify ALPS Models. To use this application, you need an abstract model (Specification) and an implementing model (Implementation). The program then checks based on the alps.net.api, if the implementation adheres to the restrictions and rules implied by the specification. 
+This console application is part of my master thesis at the Karlsruher Institute of Technology (KIT) and uses the apls.net.api to verify ALPS Models. To use this application, you need an abstract model (Specification) and an implementing model (Implementation). The program then checks based on the alps.net.api (see below), if the implementation adheres to the restrictions and rules implied by the specification. 
 
 #Attention! This project is still a prototype and missing a lot of functions! It may be that parts of your model will not be verified correctly!
 For further development, feel free to use the OWLs provided in this folder. These contain exemplary test cases. 
+
+# alps.net.api
+
+This C# library provides the functionality to create and modify in-memory PASS process models.
+These models might either be imported from an ontology (given in the owl/rdf format) or created from scratch.
+
+The library currently supports the [Standard PASS](https://github.com/I2PM/Standard-PASS-Ontology) as well as the Abstract Layered PASS created by Matthes Elstermann.
+For more information have a look at the [wiki pages](https://github.com/I2PM/alps.net.api/wiki) or at the HTML/XML doc inside the classes (this is why the project mostly consists of html code).
+
+A library with the name of this repository is also published in the NuGet store and available for download.
+Currently the library is targeting .NET Core 3.1 (netcoreapp3.1) as well as .NET Framework 4.72 (net472)
+
 
 # How to use:
 
@@ -17,27 +29,36 @@ For further development, feel free to use the OWLs provided in this folder. Thes
 - Run the console application. The results for the verification will be displayed in the console. 
 
 
-# Working until now (Update 30.06.2022):
+# Working so far (Update 30.06.2022):
+General: 
+- Importing and loading OWL files
+- Create Tuple pairs of each element (specifying_element/implementing_element)
 
+SID Verification:
 - SID Subject Implementation Check
 - SID Message Implementation Check
 - SID Message Restriction Check
 
+SBD Verification: 
 
-# alps.net.api
 
-This C# library provides the functionality to create and modify in-memory PASS process models.
-These models might either be imported from an ontology (given in the owl/rdf format) or created from scratch.
 
-The library currently supports the [Standard PASS](https://github.com/I2PM/Standard-PASS-Ontology) as well as the Abstract Layered PASS created by Matthes Elstermann.
-For more information have a look at the [wiki pages](https://github.com/I2PM/alps.net.api/wiki) or at the HTML/XML doc inside the classes (this is why the project mostly consists of html code).
-
-A library with the name of this repository is also published in the NuGet store and available for download.
-Currently the library is targeting .NET Core 3.1 (netcoreapp3.1) as well as .NET Framework 4.72 (net472)
 
 
 
 
 # To Dos:
 
-- 
+General: 
+- Idea: User Interface for easier usage
+- Idea: Suggestion System that tries to solve occuring errors
+- Verification result must be gathered from the individual check return values. Right now it still requires a person to derive the result from the outputs. 
+
+SID: 
+- Abstract Communication Channels Check
+- Finalized Messages 
+- Properties of a Subject (Multiplicity, Start/End) 
+
+
+SBD: 
+
