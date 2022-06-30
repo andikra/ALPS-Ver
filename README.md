@@ -49,6 +49,8 @@ General:
 - Verification result must be gathered from the individual check return values. Right now it still requires a person to derive the result from the outputs.
 - Node System from a different library is included, but the interface is still not functional
 
+![alt text](https://github.com/andikra/ALPS-Verification-Thesis/blob/main/Node_System.JPG)
+
 SID: 
 - Abstract Communication Channels Check
 - Finalized Messages 
