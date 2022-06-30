@@ -26,13 +26,13 @@ Currently the library is targeting .NET Core 3.1 (netcoreapp3.1) as well as .NET
 
 - Put both models on the file path specified in the Helperclass.cs
 
-- Run the console application. The results for the verification will be displayed in the console. 
+- Run the console application "ALPS Verifiication". The results for the verification will be displayed in the console. 
 
 
 # Working so far (Update 30.06.2022):
 General: 
 - Importing and loading OWL files
-- Create Tuple pairs of each element (specifying_element/implementing_element)
+- Create Tuple pairs of each element (specifying_element/implementing_element) and return them to main method
 
 SID Verification:
 - SID Subject Implementation Check
@@ -59,3 +59,6 @@ SBD:
 - General Checks on singular elements
 - checks via node system for precedence/trigger transitions
 
+
+# Planned Structure: 
+![alt text](http://url/to/img.png)
