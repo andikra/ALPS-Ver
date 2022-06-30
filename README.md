@@ -17,7 +17,7 @@ For further development, feel free to use the OWLs provided in this folder. Thes
 - Run the console application. The results for the verification will be displayed in the console. 
 
 
-#Working until now (Update 30.06.2022):
+# Working until now (Update 30.06.2022):
 
 - SID Subject Implementation Check
 - SID Message Implementation Check
@@ -38,6 +38,6 @@ Currently the library is targeting .NET Core 3.1 (netcoreapp3.1) as well as .NET
 
 
 
-#To Dos:
+# To Dos:
 
 - 
