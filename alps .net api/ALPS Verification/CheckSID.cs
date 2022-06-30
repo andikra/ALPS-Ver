@@ -90,7 +90,7 @@ using alps.net.api.ALPS;
 
     public bool CheckMessageconnectors(IList<Tuple<ICommunicationAct, IImplementingElement<ICommunicationAct>>> MessageTransitions)
     {
-        Console.WriteLine("\nCheck SID Transition Implementation:");
+        //Console.WriteLine("\nCheck SID Transition Implementation:");
         int z = 0;
         bool result = true;
         int FullySpecified = 0;

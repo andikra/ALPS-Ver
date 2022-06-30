@@ -148,7 +148,7 @@ public class GetCorrespondingElementsALL
         IList<IImplementingElement<ICommunicationAct>> MessageTrans1 = Models[1].getAllElements().Values.OfType<IImplementingElement<ICommunicationAct>>().ToList();
 
 
-        Console.WriteLine("\nMessage Transition Implementation:");
+        //Console.WriteLine("\nMessage Transition Implementation:");
         var Messages = new List<Tuple<ICommunicationAct, IImplementingElement<ICommunicationAct>>>();
 
 
@@ -281,7 +281,7 @@ public class GetCorrespondingElementsALL
         IList<IState> State1 = Models[1].getAllElements().Values.OfType<IState>().ToList();
 
 
-        Console.WriteLine("\nState Implementation:");
+        //Console.WriteLine("\nState Implementation:");
         var Elements = new List<Tuple<IState, IState>>();
 
 
@@ -343,7 +343,7 @@ public class GetCorrespondingElementsALL
         IList<IState> Trans1 = Models[1].getAllElements().Values.OfType<IState>().ToList();
 
 
-        Console.WriteLine("\nTransition Implementation:");
+        //Console.WriteLine("\nTransition Implementation:");
         var Elements = new List<Tuple<ITransition, ITransition>>();
 
 

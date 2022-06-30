@@ -113,3 +113,563 @@ Log Entry : 15:36:29 Dienstag, 21. Juni 2022
   :
   :Transitions:
 -------------------------------
+
+Log Entry : 19:55:05 Montag, 27. Juni 2022
+  :
+  :Kra
+-------------------------------
+
+Log Entry : 19:55:05 Montag, 27. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_FullySpecifiedSubject_2 Element implemented!
+-------------------------------
+
+Log Entry : 19:55:05 Montag, 27. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_FullySpecifiedSubject_12 Element implemented!
+-------------------------------
+
+Log Entry : 19:55:05 Montag, 27. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_AbstractSubject_22 Element not implemented!
+-------------------------------
+
+Log Entry : 19:55:05 Montag, 27. Juni 2022
+  :
+  :Not all Elements implemented!
+-------------------------------
+
+Log Entry : 19:55:05 Montag, 27. Juni 2022
+  :
+  :alps.net.api.ALPS.AbstractMessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 19:55:05 Montag, 27. Juni 2022
+  :
+  :alps.net.api.StandardPASS.MessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 19:55:05 Montag, 27. Juni 2022
+  :
+  :alps.net.api.StandardPASS.MessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 19:55:05 Montag, 27. Juni 2022
+  :
+  :alps.net.api.StandardPASS.MessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 19:55:05 Montag, 27. Juni 2022
+  :
+  :Message Restrictions:
+-------------------------------
+
+Log Entry : 19:55:05 Montag, 27. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_CommunicationRestriction_46
+-------------------------------
+
+Log Entry : 19:55:05 Montag, 27. Juni 2022
+  :
+  :alps.net.api.ALPS.CommunicationRestriction Element not implemented!
+-------------------------------
+
+Log Entry : 19:55:05 Montag, 27. Juni 2022
+  :
+  :States:
+-------------------------------
+
+Log Entry : 19:55:05 Montag, 27. Juni 2022
+  :
+  :Transitions:
+-------------------------------
+
+Log Entry : 09:12:31 Dienstag, 28. Juni 2022
+  :
+  :Kra
+-------------------------------
+
+Log Entry : 09:12:31 Dienstag, 28. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_FullySpecifiedSubject_2 Element implemented!
+-------------------------------
+
+Log Entry : 09:12:31 Dienstag, 28. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_FullySpecifiedSubject_12 Element implemented!
+-------------------------------
+
+Log Entry : 09:12:31 Dienstag, 28. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_AbstractSubject_22 Element not implemented!
+-------------------------------
+
+Log Entry : 09:12:31 Dienstag, 28. Juni 2022
+  :
+  :Not all Elements implemented!
+-------------------------------
+
+Log Entry : 09:12:31 Dienstag, 28. Juni 2022
+  :
+  :alps.net.api.ALPS.AbstractMessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 09:12:31 Dienstag, 28. Juni 2022
+  :
+  :alps.net.api.StandardPASS.MessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 09:12:31 Dienstag, 28. Juni 2022
+  :
+  :alps.net.api.StandardPASS.MessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 09:12:31 Dienstag, 28. Juni 2022
+  :
+  :alps.net.api.StandardPASS.MessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 09:12:31 Dienstag, 28. Juni 2022
+  :
+  :Message Restrictions:
+-------------------------------
+
+Log Entry : 09:12:31 Dienstag, 28. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_CommunicationRestriction_46
+-------------------------------
+
+Log Entry : 09:12:31 Dienstag, 28. Juni 2022
+  :
+  :alps.net.api.ALPS.CommunicationRestriction Element not implemented!
+-------------------------------
+
+Log Entry : 09:12:31 Dienstag, 28. Juni 2022
+  :
+  :States:
+-------------------------------
+
+Log Entry : 09:12:31 Dienstag, 28. Juni 2022
+  :
+  :Transitions:
+-------------------------------
+
+Log Entry : 09:16:27 Dienstag, 28. Juni 2022
+  :
+  :Kra
+-------------------------------
+
+Log Entry : 09:16:27 Dienstag, 28. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_FullySpecifiedSubject_2 Element implemented!
+-------------------------------
+
+Log Entry : 09:16:27 Dienstag, 28. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_FullySpecifiedSubject_12 Element implemented!
+-------------------------------
+
+Log Entry : 09:16:27 Dienstag, 28. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_AbstractSubject_22 Element not implemented!
+-------------------------------
+
+Log Entry : 09:16:27 Dienstag, 28. Juni 2022
+  :
+  :Not all Elements implemented!
+-------------------------------
+
+Log Entry : 09:16:27 Dienstag, 28. Juni 2022
+  :
+  :alps.net.api.ALPS.AbstractMessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 09:16:27 Dienstag, 28. Juni 2022
+  :
+  :alps.net.api.StandardPASS.MessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 09:16:27 Dienstag, 28. Juni 2022
+  :
+  :alps.net.api.StandardPASS.MessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 09:16:27 Dienstag, 28. Juni 2022
+  :
+  :alps.net.api.StandardPASS.MessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 09:16:27 Dienstag, 28. Juni 2022
+  :
+  :Message Restrictions:
+-------------------------------
+
+Log Entry : 09:16:27 Dienstag, 28. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_CommunicationRestriction_46
+-------------------------------
+
+Log Entry : 09:16:27 Dienstag, 28. Juni 2022
+  :
+  :alps.net.api.ALPS.CommunicationRestriction Element not implemented!
+-------------------------------
+
+Log Entry : 09:16:27 Dienstag, 28. Juni 2022
+  :
+  :States:
+-------------------------------
+
+Log Entry : 09:16:27 Dienstag, 28. Juni 2022
+  :
+  :Transitions:
+-------------------------------
+
+Log Entry : 09:17:09 Dienstag, 28. Juni 2022
+  :
+  :Kra
+-------------------------------
+
+Log Entry : 09:17:09 Dienstag, 28. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_FullySpecifiedSubject_2 Element implemented!
+-------------------------------
+
+Log Entry : 09:17:09 Dienstag, 28. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_FullySpecifiedSubject_12 Element implemented!
+-------------------------------
+
+Log Entry : 09:17:09 Dienstag, 28. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_AbstractSubject_22 Element not implemented!
+-------------------------------
+
+Log Entry : 09:17:09 Dienstag, 28. Juni 2022
+  :
+  :Not all Elements implemented!
+-------------------------------
+
+Log Entry : 09:17:09 Dienstag, 28. Juni 2022
+  :
+  :alps.net.api.ALPS.AbstractMessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 09:17:09 Dienstag, 28. Juni 2022
+  :
+  :alps.net.api.StandardPASS.MessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 09:17:09 Dienstag, 28. Juni 2022
+  :
+  :alps.net.api.StandardPASS.MessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 09:17:09 Dienstag, 28. Juni 2022
+  :
+  :alps.net.api.StandardPASS.MessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 09:17:09 Dienstag, 28. Juni 2022
+  :
+  :Message Restrictions:
+-------------------------------
+
+Log Entry : 09:17:09 Dienstag, 28. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_CommunicationRestriction_46
+-------------------------------
+
+Log Entry : 09:17:09 Dienstag, 28. Juni 2022
+  :
+  :alps.net.api.ALPS.CommunicationRestriction Element not implemented!
+-------------------------------
+
+Log Entry : 09:17:09 Dienstag, 28. Juni 2022
+  :
+  :States:
+-------------------------------
+
+Log Entry : 09:17:09 Dienstag, 28. Juni 2022
+  :
+  :Transitions:
+-------------------------------
+
+Log Entry : 09:17:23 Dienstag, 28. Juni 2022
+  :
+  :Kra
+-------------------------------
+
+Log Entry : 09:17:23 Dienstag, 28. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_FullySpecifiedSubject_2 Element implemented!
+-------------------------------
+
+Log Entry : 09:17:23 Dienstag, 28. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_FullySpecifiedSubject_12 Element implemented!
+-------------------------------
+
+Log Entry : 09:17:23 Dienstag, 28. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_AbstractSubject_22 Element not implemented!
+-------------------------------
+
+Log Entry : 09:17:23 Dienstag, 28. Juni 2022
+  :
+  :Not all Elements implemented!
+-------------------------------
+
+Log Entry : 09:17:23 Dienstag, 28. Juni 2022
+  :
+  :alps.net.api.ALPS.AbstractMessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 09:17:23 Dienstag, 28. Juni 2022
+  :
+  :alps.net.api.StandardPASS.MessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 09:17:23 Dienstag, 28. Juni 2022
+  :
+  :alps.net.api.StandardPASS.MessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 09:17:23 Dienstag, 28. Juni 2022
+  :
+  :alps.net.api.StandardPASS.MessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 09:17:23 Dienstag, 28. Juni 2022
+  :
+  :Message Restrictions:
+-------------------------------
+
+Log Entry : 09:17:23 Dienstag, 28. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_CommunicationRestriction_46
+-------------------------------
+
+Log Entry : 09:17:23 Dienstag, 28. Juni 2022
+  :
+  :alps.net.api.ALPS.CommunicationRestriction Element not implemented!
+-------------------------------
+
+Log Entry : 09:17:23 Dienstag, 28. Juni 2022
+  :
+  :States:
+-------------------------------
+
+Log Entry : 09:17:23 Dienstag, 28. Juni 2022
+  :
+  :Transitions:
+-------------------------------
+
+Log Entry : 09:44:32 Dienstag, 28. Juni 2022
+  :
+  :Kra
+-------------------------------
+
+Log Entry : 09:44:32 Dienstag, 28. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_FullySpecifiedSubject_2 Element implemented!
+-------------------------------
+
+Log Entry : 09:44:32 Dienstag, 28. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_FullySpecifiedSubject_12 Element implemented!
+-------------------------------
+
+Log Entry : 09:44:32 Dienstag, 28. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_AbstractSubject_22 Element not implemented!
+-------------------------------
+
+Log Entry : 09:44:32 Dienstag, 28. Juni 2022
+  :
+  :Not all Elements implemented!
+-------------------------------
+
+Log Entry : 09:44:32 Dienstag, 28. Juni 2022
+  :
+  :alps.net.api.ALPS.AbstractMessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 09:44:32 Dienstag, 28. Juni 2022
+  :
+  :alps.net.api.StandardPASS.MessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 09:44:32 Dienstag, 28. Juni 2022
+  :
+  :alps.net.api.StandardPASS.MessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 09:44:32 Dienstag, 28. Juni 2022
+  :
+  :alps.net.api.StandardPASS.MessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 09:44:32 Dienstag, 28. Juni 2022
+  :
+  :Message Restrictions:
+-------------------------------
+
+Log Entry : 09:44:32 Dienstag, 28. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_CommunicationRestriction_46
+-------------------------------
+
+Log Entry : 09:44:32 Dienstag, 28. Juni 2022
+  :
+  :alps.net.api.ALPS.CommunicationRestriction Element not implemented!
+-------------------------------
+
+Log Entry : 09:44:32 Dienstag, 28. Juni 2022
+  :
+  :States:
+-------------------------------
+
+Log Entry : 09:44:32 Dienstag, 28. Juni 2022
+  :
+  :Transitions:
+-------------------------------
+
+Log Entry : 11:23:20 Dienstag, 28. Juni 2022
+  :
+  :Kra
+-------------------------------
+
+Log Entry : 11:23:20 Dienstag, 28. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_FullySpecifiedSubject_2 Element implemented!
+-------------------------------
+
+Log Entry : 11:23:20 Dienstag, 28. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_FullySpecifiedSubject_12 Element implemented!
+-------------------------------
+
+Log Entry : 11:23:20 Dienstag, 28. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_AbstractSubject_22 Element not implemented!
+-------------------------------
+
+Log Entry : 11:23:20 Dienstag, 28. Juni 2022
+  :
+  :Not all Elements implemented!
+-------------------------------
+
+Log Entry : 11:23:20 Dienstag, 28. Juni 2022
+  :
+  :alps.net.api.ALPS.AbstractMessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 11:23:20 Dienstag, 28. Juni 2022
+  :
+  :alps.net.api.StandardPASS.MessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 11:23:20 Dienstag, 28. Juni 2022
+  :
+  :alps.net.api.StandardPASS.MessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 11:23:20 Dienstag, 28. Juni 2022
+  :
+  :alps.net.api.StandardPASS.MessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 11:23:20 Dienstag, 28. Juni 2022
+  :
+  :Message Restrictions:
+-------------------------------
+
+Log Entry : 11:23:20 Dienstag, 28. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_CommunicationRestriction_46
+-------------------------------
+
+Log Entry : 11:23:20 Dienstag, 28. Juni 2022
+  :
+  :alps.net.api.ALPS.CommunicationRestriction Element not implemented!
+-------------------------------
+
+Log Entry : 11:23:20 Dienstag, 28. Juni 2022
+  :
+  :States:
+-------------------------------
+
+Log Entry : 11:23:20 Dienstag, 28. Juni 2022
+  :
+  :Transitions:
+-------------------------------
+
+Log Entry : 17:13:21 Donnerstag, 30. Juni 2022
+  :
+  :Kra
+-------------------------------
+
+Log Entry : 17:13:21 Donnerstag, 30. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_FullySpecifiedSubject_2 Element implemented!
+-------------------------------
+
+Log Entry : 17:13:21 Donnerstag, 30. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_FullySpecifiedSubject_12 Element implemented!
+-------------------------------
+
+Log Entry : 17:13:21 Donnerstag, 30. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_AbstractSubject_22 Element not implemented!
+-------------------------------
+
+Log Entry : 17:13:21 Donnerstag, 30. Juni 2022
+  :
+  :Not all Elements implemented!
+-------------------------------
+
+Log Entry : 17:13:21 Donnerstag, 30. Juni 2022
+  :
+  :alps.net.api.ALPS.AbstractMessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 17:13:21 Donnerstag, 30. Juni 2022
+  :
+  :alps.net.api.StandardPASS.MessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 17:13:21 Donnerstag, 30. Juni 2022
+  :
+  :alps.net.api.StandardPASS.MessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 17:13:21 Donnerstag, 30. Juni 2022
+  :
+  :alps.net.api.StandardPASS.MessageExchange Element not implemented!
+-------------------------------
+
+Log Entry : 17:13:21 Donnerstag, 30. Juni 2022
+  :
+  :Message Restrictions:
+-------------------------------
+
+Log Entry : 17:13:21 Donnerstag, 30. Juni 2022
+  :
+  :http://subjective-me.jimdo.com/s-bpm/processmodels/2022-04-14/Zeichenblatt-1#SID_1_CommunicationRestriction_46
+-------------------------------
+
+Log Entry : 17:13:21 Donnerstag, 30. Juni 2022
+  :
+  :alps.net.api.ALPS.CommunicationRestriction Element not implemented!
+-------------------------------
+
+Log Entry : 17:13:21 Donnerstag, 30. Juni 2022
+  :
+  :States:
+-------------------------------
+
+Log Entry : 17:13:21 Donnerstag, 30. Juni 2022
+  :
+  :Transitions:
+-------------------------------

@@ -77,7 +77,6 @@ public class OriginalClass
 
 //Methods for SID Validity checks: 
         CheckSBD CheckSBD = new CheckSBD();
-       
 
 
 
@@ -86,7 +85,7 @@ public class OriginalClass
 
 
 
-
+        /*
 
         //Testing Section
         IList<ISubject> Subjects1 = models[1].getAllElements().Values.OfType<ISubject>().ToList();
@@ -192,7 +191,7 @@ public class OriginalClass
 
             }
 
-            }
+            }*/
         }
 
     }
