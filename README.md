@@ -1,7 +1,8 @@
 # ALPS Verification
 This console application is part of my master thesis at the Karlsruher Institute of Technology (KIT) and uses the apls.net.api to verify ALPS Models. To use this application, you need an abstract model (Specification) and an implementing model (Implementation) created with the process modeling language Abstract Layered PASS. The program then checks based on the alps.net.api (see below), if the implementation adheres to the restrictions and rules implied by the specification. 
 
-# Attention! This project is still a prototype and missing a lot of functions! It may be that parts of your model will not be verified correctly! For further development, feel free to use the OWLs provided in this folder. These contain exemplary test cases. 
+# Attention! 
+This project is still a prototype and missing a lot of functions! It may be that parts of your model will not be verified correctly! For further development, feel free to use the OWLs provided in this folder. These contain exemplary test cases. 
 
 # alps.net.api
 
